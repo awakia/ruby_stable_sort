@@ -1,6 +1,6 @@
 # StableSort
 
-TODO: Write a gem description
+Add `stable_sort` and `stable_sort_by` to Array and Enumerator.
 
 ## Installation
 
@@ -18,7 +18,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+['a', 'c', 'bd', 'fe', 'b'].sort_by { |x| x.length }
+# => ["a", "c", "b", "fe", "bd"]
+
+
+['a', 'c', 'bd', 'fe', 'b'].stable_sort_by { |x| x.length }
+# => ["a", "c", "b", "bd", "fe"]
+```
 
 ## Contributing
 
