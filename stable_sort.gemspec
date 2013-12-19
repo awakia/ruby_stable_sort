@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = StableSort::VERSION
   spec.authors       = ["Naoyoshi Aikawa"]
   spec.email         = ["n.aikawa91@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Add stable sort functionality to ruby}
+  spec.summary       = %q{Add stable_sort and stable_sort_by to Array and Enumerator.}
   spec.homepage      = "https://github.com/awakia/ruby_stable_sort"
   spec.license       = "MIT"
 
