@@ -18,14 +18,33 @@ Or install it yourself as:
 
 ## Usage
 
+stable_sort
+
+```
+KeyValue = Struct.new(:key, :value) do
+  def <=> (other)
+    self.key <=> other.key
+  end
+end
+
+[KeyValue.new(1, 1), KeyValue.new(1, 2), KeyValue.new(1, 3), KeyValue.new(1, 4), KeyValue.new(0, 10)].sort
+# => [#<struct KeyValue key=0, value=10>, #<struct KeyValue key=1, value=3>, #<struct KeyValue key=1, value=2>, #<struct KeyValue key=1, value=4>, #<struct KeyValue key=1, value=1>]
+
+[KeyValue.new(1, 1), KeyValue.new(1, 2), KeyValue.new(1, 3), KeyValue.new(1, 4), KeyValue.new(0, 10)].stable_sort
+# => [#<struct KeyValue key=0, value=10>, #<struct KeyValue key=1, value=1>, #<struct KeyValue key=1, value=2>, #<struct KeyValue key=1, value=3>, #<struct KeyValue key=1, value=4>]
+```
+
+stable_sort_by
+
 ```
 ['a', 'c', 'bd', 'fe', 'b'].sort_by { |x| x.length }
 # => ["a", "c", "b", "fe", "bd"]
 
-
 ['a', 'c', 'bd', 'fe', 'b'].stable_sort_by { |x| x.length }
 # => ["a", "c", "b", "bd", "fe"]
 ```
+
+Currently, stable_sort gem do not take block. If you needed, please send a pull request :)
 
 ## Contributing
 
