@@ -1,4 +1,4 @@
-# StableSort
+# StableSort [![Build Status](https://travis-ci.org/awakia/ruby_stable_sort.png)](https://travis-ci.org/awakia/ruby_stable_sort)
 
 Add `stable_sort` and `stable_sort_by` to Array and Enumerator.
 
