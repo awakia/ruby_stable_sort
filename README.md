@@ -1,4 +1,4 @@
-# StableSort [![Build Status](https://travis-ci.org/awakia/ruby_stable_sort.png)](https://travis-ci.org/awakia/ruby_stable_sort) [![Coverage Status](https://coveralls.io/repos/awakia/ruby_stable_sort/badge.png)](https://coveralls.io/r/awakia/ruby_stable_sort)
+# StableSort [![Build Status](https://travis-ci.org/awakia/ruby_stable_sort.png)](https://travis-ci.org/awakia/ruby_stable_sort) [![Coverage Status](https://coveralls.io/repos/awakia/ruby_stable_sort/badge.png?branch=master)](https://coveralls.io/r/awakia/ruby_stable_sort?branch=master)
 
 Add `stable_sort` and `stable_sort_by` to Array and Enumerator.
 
