@@ -1,7 +1,8 @@
 require 'spec_helper'
 
 describe Enumerable do
-    KeyValue = Struct.new(:key, :value) do
+  
+  KeyValue = Struct.new(:key, :value) do
     def <=> (other)
       self.key <=> other.key
     end
